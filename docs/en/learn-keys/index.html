@@ -112,7 +112,7 @@ weight of the stash. It will never be able to actually move or claim the funds i
 However, if someone does obtain your controller key, they could use it for slashable behavior, so
 you should still protect it and change it regularly.</p>
 <h2><a class="anchor" aria-hidden="true" id="session-keys"></a><a href="#session-keys" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Session Keys</h2>
-<p>Session keys are hot keys that be must kept online by a validator to perform network operations.
+<p>Session keys are hot keys that must be kept online by a validator to perform network operations.
 Session keys are typically generated in the client, although they don't have to be. They are <em>not</em>
 meant to control funds and should only be used for their intended purpose. They can be changed
 regularly; your controller only need create a certificate by signing a session public key and
@@ -162,7 +162,7 @@ cofactor of a curve is an esoteric detail that could have dire consequences for 
 implementation of more complex protocols.</p>
 <p>Conveniently, <a href="https://www.shiftleft.org/papers/decaf/index.xhtml">Mike Hamburg's Decaf paper</a>
 provides a possible path forward to solving this potential bug. Decaf is basically a way to take
-Twisted Edward's Curves cofactor and mathematical change it with little cost to performance and
+Twisted Edward's Curves cofactor and mathematically change it with little cost to performance and
 gains to security.</p>
 <p>The Decaf paper approach by the <a href="https://ristretto.group/">Ristretto Group</a> was extended and
 implemented in Rust to include cofactor-8 curves like the Curve25519 and makes Schnorr signatures
