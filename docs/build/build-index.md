@@ -12,7 +12,7 @@ Welcome to the builder's section of the {{ polkadot: Polkadot Wiki :polkadot }}
 Here, you will discover many development tools and resources in the Polkadot ecosystem.
 We are always adding new tools and frameworks as we learn about them so if you are working
 on something that should be included please reach out to us on
-{{ polkadot: [Element](https://matrix.to/#/#polkadot-watercooler:matrix.org) :polkadot }} 
+{{ polkadot: [Element](https://matrix.to/#/#polkadot-watercooler:matrix.org) :polkadot }}
 {{ kusama: [Element](https://matrix.to/#/#kusama-watercooler:matrix.org) :kusama }}.
 This section of the wiki is divided into the following parts:
 
